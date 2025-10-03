@@ -2,6 +2,8 @@
 
 ## БИН-25-3
 
+42 пары
+
 [1st week](./timetable_1w.md)
 
 [2nd week](./timetable_2w.md)
