@@ -1,4 +1,4 @@
-1
+#1
 #name = input ('Севинч')
 #age = input ('18')
 #for _ in range(10) :
