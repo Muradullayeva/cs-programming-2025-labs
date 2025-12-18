@@ -1,28 +1,4 @@
 #1
-def calculate_profit (amount, years) :
-    if amount < 30000:
-        return "Ошибка: минимальный вклад — 30 000 рублей"
-    bonus = min ((amount // 10000) * 0.3, 5)
-
-    if years <= 3:
-        rate = 3
-    elif 4 < years <= 6:
-        rate = 5
-    else:
-        rate = 2
-
-    total_rate = rate + bonus
-    total_amount = amount * ((1 + total_rate / 100) ** years)
-    profit = total_amount - amount
-
-    return round (profit, 2)
-
-a = int(input("Введите сумму вклада: "))
-y = int(input ("Введите количество лет: "))
-
-print ( "Ваш доход по вкладу: ", calculate_profit (a,y), " руб.")
-
-#2
 def time_converter(value, from_unit, to_unit):
     if from_unit == 's':
         seconds = value
@@ -48,6 +24,29 @@ c = str(input("Введите целевую единицу измерения (
 print("Ваше время", a, "переведено из", b, "в", c)
 print("Результат:", time_converter(a, b, c))
 
+#2
+def calculate_profit (amount, years) :
+    if amount < 30000:
+        return "Ошибка: минимальный вклад — 30 000 рублей"
+    bonus = min ((amount // 10000) * 0.3, 5)
+
+    if years <= 3:
+        rate = 3
+    elif 4 < years <= 6:
+        rate = 5
+    else:
+        rate = 2
+
+    total_rate = rate + bonus
+    total_amount = amount * ((1 + total_rate / 100) ** years)
+    profit = total_amount - amount
+
+    return round (profit, 2)
+
+a = int(input("Введите сумму вклада: "))
+y = int(input ("Введите количество лет: "))
+
+print ( "Ваш доход по вкладу: ", calculate_profit (a,y), " руб.")
 #3
 def is_prime(num):
     if num < 2:
